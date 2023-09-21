@@ -13,10 +13,15 @@
 </head>
 <body>
   <figure class="item">
-    <img src="../NoLimits/assets/image 11970.svg" alt="astronauta">
-    <h1>Explore sem limites</h1>
-    <p>Porque o aprendizado é contínuo</p>
-    <img src="../NoLimits/assets/Group 24.svg" alt="seta">
+    <div class="part2">
+      <img src="../NoLimits/assets/image 11970.svg" alt="astronauta">
+    </div>
+    
+    <div class="part1">
+      <h1>Explore sem limites</h1>
+      <p>Porque o aprendizado é contínuo</p>
+      <img class="seta" src="../NoLimits/assets/Group 24.svg" alt="seta">
+    </div>
   </figure>
   
   <main>
@@ -39,34 +44,39 @@
     </figure>
   </main>
 
-  <form id="my-form">
+  <div class="superchager">
+    <form id="my-form">
+        <h1>Entre em contato</h1>
 
-      <h1>Entre em contato</h1>
+        <div class="form-wrapper">
 
-      <div class="form-wrapper">
+          <div class="input-wrapper">
+            <img src="../NoLimits/assets/person.svg" alt="icone Pessoa">
+            <label for="name">Seu nome</label>
+            <input id="name" type="text" placeholder="Seu nome" required>
+          </div>
 
-        <div class="input-wrapper">
-          <img src="../NoLimits/assets/person.svg" alt="icone Pessoa">
-          <label for="name">Seu nome</label>
-          <input id="name" type="text" placeholder="Seu nome" required>
+          <div class="input-wrapper">
+            <img src="../NoLimits/assets/at.svg" alt="Arroba">
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="Email" required>
+          </div>
+
+          <div class="input-wrapper">
+            <label for="event-info">Digite sua mensagem aqui...</label>
+            <textarea id="event-info" placeholder="Digite sua mensagem aqui..."></textarea>
+          </div>
+
         </div>
 
-        <div class="input-wrapper">
-          <img src="../NoLimits/assets/at.svg" alt="Arroba">
-          <label for="email">Email</label>
-          <input id="email" type="email" placeholder="Email" required>
-        </div>
+        <input class="button" type="submit" form="my-form"  value="Enviar mensagem">
+    </form>
 
-        <div class="input-wrapper">
-          <label for="event-info">Digite sua mensagem aqui...</label>
-          <textarea id="event-info" placeholder="Digite sua mensagem aqui..."></textarea>
-        </div>
+    <div class="final2">
+      <img src="../NoLimits/assets/image 11976.svg" alt="">
+    </div>
+  </div>
 
-      </div>
-
-      <input class="button" type="submit" form="my-form"  value="Enviar mensagem">
-
-  </form>
   <footer class="container">© 2023 - Rocketseat Explorer</footer>
 </body>
 </html>

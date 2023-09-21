@@ -201,3 +201,117 @@ footer{
   font-weight: 600;
   line-height: normal;
 }
+
+@media (min-width: 1440px) {
+
+  body {
+    max-width: 144rem;
+    max-height: 86rem;
+  }
+
+  .item {
+    display: flex ;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    gap: 2.8rem;
+    justify-content: flex-end;
+  }
+
+  .part1 {
+    margin-top: 23rem ;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 10rem;
+    max-width: 50%;
+
+  }
+
+  .part1 h1 {
+    color: #B52184;
+    font-family: 'Mulish', sans-serif;
+    font-size: 5.8rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+  }
+
+  .part1 p {
+    color: #312D64;
+    font-family: 'Mulish', sans-serif;
+    font-size: 3.2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: initial;
+  }
+
+  .seta {
+   margin-top: 8rem;
+  }
+
+  .part2 img{
+    width: 60rem;
+    height: 61rem;
+    
+  }
+
+  main {
+    display: flex;
+    flex-direction: row;
+    gap: 6rem;
+    padding: 6.4rem 11.1rem;
+
+    max-width: 144rem;
+    max-height: 57.6rem;
+    background: linear-gradient(96deg, #343193 0%, #302C63 99.68%);
+  }
+
+  .section-wrapper {
+    max-width: 36rem;
+    max-height: 44rem;
+    padding: 3.2rem;
+  }
+
+  .section-wrapper h1 {
+    color: #B52184;
+    font-family: 'Mulish', sans-serif;
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+  }
+
+  .section-wrapper p {
+    color: #312D64;
+    font-family: 'Mulish', sans-serif;
+    font-size: 1.9rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .superchager{
+    display: flex;
+    gap: 9rem;
+    background: #F9F4FB;
+  }
+
+  form {
+    width: 50%;
+    margin-left: 7rem;
+  }
+
+  #my-form h1 {
+    color: #B52184;
+    font-family: 'Mulish', sans-serif;
+    font-size: 4.2rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+  }
+    
+  .final2 {
+    background: url(<path-to-image>), cover no-repeat;
+  }
+  }
