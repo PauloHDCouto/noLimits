@@ -55,13 +55,22 @@ body{
   margin-bottom: 3.5rem;
 }
 
+.part1{
+  text-align: center;
+}
+
+.part2 img {
+  width: 100%;
+}
+
 main{
   background-color: #312D64;
   padding: 5.3rem 4rem;
-  max-height: 124rem;
   display: flex;
   flex-direction: column;
   gap: 5rem;
+  width: 100%;
+  height: 100%;
 }
 
 .section-wrapper{
@@ -97,7 +106,8 @@ main{
 
 #my-form{
   padding: 7.8rem 3.9rem 6.5rem 4rem;
-  max-height: 56.5rem;
+  width: 100%;
+  height: 100%;
   background-color: #F9F4FB;
 }
 
@@ -202,6 +212,15 @@ footer{
   line-height: normal;
 }
 
+.final2{
+  display:none;
+ }
+
+ .button:hover {
+  filter: brightness(1.5);
+}
+
+
 @media (min-width: 1440px) {
 
   body {
@@ -213,8 +232,17 @@ footer{
     display: flex ;
     flex-direction: row-reverse;
     align-items: flex-start;
-    gap: 2.8rem;
+    gap: 4.8rem;
     justify-content: flex-end;
+  }
+
+  .part2 img:hover {
+    transition-property: all;
+    transition-duration: .3s;
+    transition-delay: 0.1s;
+    transition-timing-function: ease-in; 
+    filter: hue-rotate(7deg) contrast(101%) saturate(200%);
+    transform: scale(1.1) rotate(-4deg)
   }
 
   .part1 {
@@ -312,6 +340,34 @@ footer{
   }
     
   .final2 {
+    display: block;
     background: url(<path-to-image>), cover no-repeat;
   }
+
+  .section-wrapper {
+    --delay: .4s;
+    animation: appear .4s var(--delay) backwards;
   }
+  
+  @keyframes appear {
+    0% {
+      opacity: 0;
+      transform: scale(0.7);
+    }
+  
+    50% {
+      transform: scale(1.2);
+    }
+  }
+
+  footer {
+    --startY: 100%;
+    animation: move .5s;
+  }
+
+  @keyframes move {
+    from {
+      transform: translateY(var(--startY));
+    }
+  }
+}
