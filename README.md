@@ -9,3 +9,7 @@ Pontos importantes e que devem ser pensados durante a construção do projeto:
 - Seria bacana se já iniciasse o projeto usando as unidades de medida flexíveis (rem);
 - Você pode usar variáveis no CSS pra treinar;
 - Olhe com carinho para a acessibilidade: cuide da semântica do seu HTML.
+
+<p align="center">
+  <img alt="" src="./assets/Sem título.png" width="100%">
+</p>
